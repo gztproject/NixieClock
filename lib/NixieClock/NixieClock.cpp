@@ -42,10 +42,10 @@ void NixieClock::showTempHum(int temp, int hum)
 /*
  * Shows a number i
  */
-void NixieClock::showInt(int i, bool leadingZeros)
+void NixieClock::showInt(uint32_t i, bool leadingZeros)
 {     
-    byte leftDigits = i > 9999 ? itob(floor(i/10000), leadingZeros) : EMPTY_PAIR;
-    byte middleDigits = i > 99 ? itob(floor((i % 10000)/100), leadingZeros) : EMPTY_PAIR;
+    byte leftDigits = i > 9999 ? itob(floor(i/10000), leadingZeros) : leadingZeros ? itob(0, leadingZeros) : EMPTY_PAIR;
+    byte middleDigits = i > 99 ? itob(floor((i % 10000)/100), leadingZeros) : leadingZeros ? itob(0, leadingZeros) : EMPTY_PAIR;
     byte rightDigits = itob(i%100, leadingZeros);
     uint8_t pinValues[] = { leftDigits, middleDigits, rightDigits, NO_DOTS };
     sr.setAll(pinValues);
@@ -54,7 +54,7 @@ void NixieClock::showInt(int i, bool leadingZeros)
 
 void NixieClock::cycleTubes()
 {
-    for(uint16_t i = 0; i<1000000; i += 111111)
+    for(uint32_t i = 0; i<10000000; i += 111111)
     {
         showInt(i, true);
     }

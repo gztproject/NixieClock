@@ -30,7 +30,7 @@
             void showTime(int h, int m, int s);
             void showDate(int d, int m, int y);
             void showTempHum(int temp, int hum);
-            void showInt(int i, bool leadingZeros);
+            void showInt(uint32_t i, bool leadingZeros);
             void cycleTubes();
     };
 
