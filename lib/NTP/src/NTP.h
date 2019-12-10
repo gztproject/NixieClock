@@ -17,17 +17,16 @@
 
         unsigned long prevNTP = 0;
         unsigned long lastNTPResponse = millis();
-        uint32_t timeUNIX = 0;
-        uint32_t actualTime = 0;
+        time_t timeUNIX = 0;
+        time_t actualTime = 0;
+        struct tm * timeinfo;
 
         unsigned long prevActualTime = 0;
-
         
         void startUDP();
         void sendNTPpacket(IPAddress& address);
-        uint32_t getTime();
-
-
+        time_t getTime();
+        
         
         public:
             NTP();
@@ -37,6 +36,9 @@
             int getSeconds();
             int getMinutes();
             int getHours();
+            int getDay();
+            int getMonth();
+            int getYear();
     };
 
 #endif

@@ -5,27 +5,11 @@
 /************************************************************/
 /*****                     WiFi                        ******/
 /************************************************************/
-//#define IP            {10,10,2,1}
-//#define GATEWAY       {10,10,0,1}
-//#define NETWORK_MASK  {255,255,0,0}
 
 #define WIFI_SSID       "SSID"
 #define WIFI_PASSWORD   "PASSWD"
 #define HOST_NAME       "NixieClock"
 
-/************************************************************/
-/*****                     PINS                        ******/
-/************************************************************/
-#define NUM_CHIPS 4
-
-#define LATCH_PIN D2
-#define CLOCK_PIN D1
-#define DATA_PIN D0
-
-#define BME_CS D8
-#define BME_MOSI D7
-#define BME_MISO D6
-#define BME_SCK D5
 
 /************************************************************/
 /*****                 Clock options                   ******/
@@ -35,9 +19,21 @@
 #define TIME_HOST "pool.ntp.org"
 #define INTERVAL_NTP 20*60*1000
 #define USE_DST true
+
 #define SHOW_DATE true 
-#define DATE_START_SECOND 40
-#define DATE_DISPLAY_TIME 10
+#if SHOW_DATE
+  #define DATE_START_SECOND 40
+  #define DATE_DISPLAY_TIME 10
+#endif
+
 #define SHOW_TEMP false 
-#define TEMP_START_SECOND DATE_START_SECOND + DATE_DISPLAY_TIME
-#define TEMP_DISPLAY_TIME 10
+#if SHOW_TEMP
+  #define TEMP_START_SECOND 50
+  #define TEMP_DISPLAY_TIME 10
+#endif
+
+#define CYCLE_LAMPS true
+#if CYCLE_LAMPS
+  #define CYCLE_START_SECOND 0
+  #define CYCLE_TIME 1
+#endif

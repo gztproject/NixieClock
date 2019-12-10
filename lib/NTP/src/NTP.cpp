@@ -63,7 +63,9 @@ void NTP::CheckTime()
     actualTime = timeUNIX + (currentMillis - lastNTPResponse)/1000;
     if (actualTime != prevActualTime && timeUNIX != 0) { // If a second has passed since last print
         prevActualTime = actualTime;  
-    } 
+    }
+    timeinfo = localtime (&actualTime);
+    //mktime (timeinfo);
 }
 
 void NTP::startUDP() 
@@ -112,7 +114,7 @@ void NTP::sendNTPpacket(IPAddress& address) {
 
 }
 
-uint32_t NTP::getTime() {
+time_t NTP::getTime() {
     if (UDP.parsePacket() == 0) { // If there's no response (yet)
         return 0;
     }
@@ -128,15 +130,30 @@ uint32_t NTP::getTime() {
 }
 
 int NTP::getSeconds() {
+    return timeinfo->tm_sec;
     return actualTime % 60;
 }
 
 int NTP::getMinutes() {
+    return timeinfo->tm_min;
     return actualTime / 60 % 60;
 }
 
 int NTP::getHours() {
-    int h = (actualTime / 3600 % 24)+timezone;
-    if(h==24) h = 0;
+    //int h = (actualTime / 3600 % 24)+timezone;
+    int h = timeinfo->tm_hour + timezone;
+    if(h >= 24) h -= 24;
     return h;
+}
+
+int NTP::getDay() {
+    return timeinfo->tm_mday;
+}
+
+int NTP::getMonth() {
+    return timeinfo->tm_mon + 1;
+}
+
+int NTP::getYear() {
+    return timeinfo->tm_year + 1900;
 }
