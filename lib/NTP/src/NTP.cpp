@@ -5,14 +5,34 @@
 NTP::NTP()
 {}
 
-NTP::NTP(const char *host, const int checkInterval, const int tzone)
+NTP::NTP(const char *host, const int checkInterval, const int tzone, 
+                const int stdHemisphere, const int stdWeek, const int stdDay, const int stdMonth, const int stdHour, int16_t stdOffset,
+                const int dstHemisphere, const int dstWeek, const int dstDay, const int dstMonth, const int dstHour, int16_t dstOffset)
 {
-   init(host, checkInterval, tzone);
+   init(host, checkInterval, tzone, 
+                stdHemisphere, stdWeek, stdDay, stdMonth, stdHour, stdOffset,
+                dstHemisphere, dstWeek, dstDay, dstMonth, dstHour, dstOffset);
 }
 
-void NTP::init(const char *host, const int checkInterval, const int tzone)
+void NTP::init(const char *host, const int checkInterval, const int tzone, 
+                const int stdHemisphere, const int stdWeek, const int stdDay, const int stdMonth, const int stdHour, int16_t stdOffset,
+                const int dstHemisphere, const int dstWeek, const int dstDay, const int dstMonth, const int dstHour, int16_t dstOffsetArg)
 {
     timezone = tzone;
+    dstInfo[0].hemis = stdHemisphere;
+    dstInfo[0].week = stdWeek;
+    dstInfo[0].dow = stdDay;
+    dstInfo[0].month = stdMonth;
+    dstInfo[0].hour = stdHour;
+    dstOffset[0] = stdOffset;
+
+    dstInfo[1].hemis = dstHemisphere;
+    dstInfo[1].week = dstWeek;
+    dstInfo[1].dow = dstDay;
+    dstInfo[1].month = dstMonth;
+    dstInfo[1].hour = dstHour;
+    dstOffset[1] = dstOffsetArg;
+    
     interval = checkInterval;
     startUDP();
 

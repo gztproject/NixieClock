@@ -46,8 +46,24 @@
 /************************************************************/
 /*****                 Clock options                   ******/
 /************************************************************/
+#define TIMEZONE               +60  //Timezone offset from UTC in minutes
 
-#define TIMEZONE 1
+// -- Time - Start Daylight Saving Time and timezone offset from UTC in minutes
+#define TIME_DST_HEMISPHERE    0             // [TimeDst] Hemisphere (0 -> North, 1 -> South)
+#define TIME_DST_WEEK          0              // Week of month (0 -> Last, 1 -> First, 2 -> Second, 3 -> Third, 4 -> Fourth)
+#define TIME_DST_DAY           1               // Day of week (1 -> Sun, 2 -> Mon, 3 -> Tue, 4 -> Wed, 5 -> Thu, 6 -> Fri, 7 -> Sat)
+#define TIME_DST_MONTH         3               // Month (1 -> Jan, 2 -> Feb, 3 -> Mar, 4 -> Apr, 5 -> May, 6 -> Jun, 7 -> Jul, 8 -> Aug, 9 -> Sep, 10 -> Oct, 11 -> Nov, 12 -> Dec)
+#define TIME_DST_HOUR          2                 // Hour (0 to 23)
+#define TIME_DST_OFFSET        +60              // Offset from UTC in minutes (-780 to +780)
+
+// -- Time - Start Standard Time and timezone offset from UTC in minutes
+#define TIME_STD_HEMISPHERE    0             // [TimeStd] Hemisphere (0 -> North, 1 -> South)
+#define TIME_STD_WEEK          0              // Week of month (0 -> Last, 1 -> First, 2 -> Second, 3 -> Third, 4 -> Fourth)
+#define TIME_STD_DAY           1               // Day of week (1 -> Sun, 2 -> Mon, 3 -> Tue, 4 -> Wed, 5 -> Thu, 6 -> Fri, 7 -> Sat)
+#define TIME_STD_MONTH         10               // Month (1 -> Jan, 2 -> Feb, 3 -> Mar, 4 -> Apr, 5 -> May, 6 -> Jun, 7 -> Jul, 8 -> Aug, 9 -> Sep, 10 -> Oct, 11 -> Nov, 12 -> Dec)
+#define TIME_STD_HOUR          3                 // Hour (0 to 23)
+#define TIME_STD_OFFSET        +0               // Offset from UTC in minutes (-780 to +780)
+
 #define TIME_HOST "pool.ntp.org"
 #define INTERVAL_NTP 20*60*1000
 #define USE_DST true
