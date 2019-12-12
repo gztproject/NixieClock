@@ -71,5 +71,7 @@
 #endif
 
 #ifdef USE_CONFIG_OVERRIDE
-  #include "config_override.h"         // Configuration overrides for user_config.h
+  #if __has_include(<config_override.h>)
+    #include <config_override.h>         // Configuration overrides for user_config.h
+  #endif
 #endif
