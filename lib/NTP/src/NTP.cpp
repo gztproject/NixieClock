@@ -80,12 +80,11 @@ void NTP::CheckTime()
         ESP.reset();
     }
 
-    actualTime = timeUNIX + (currentMillis - lastNTPResponse)/1000;
-    if (actualTime != prevActualTime && timeUNIX != 0) { // If a second has passed since last print
-        prevActualTime = actualTime;  
+    UTCtime = timeUNIX + (currentMillis - lastNTPResponse)/1000;
+    if (UTCtime != prevUTCtime && timeUNIX != 0) { // If a second has passed since last print
+        prevUTCtime = UTCtime;  
     }
-    timeinfo = localtime (&actualTime);
-    //mktime (timeinfo);
+    timeinfo = localtime (&UTCtime + (timezone + getDST()) * 60);
 }
 
 void NTP::startUDP() 
@@ -151,23 +150,22 @@ time_t NTP::getTime() {
 
 int NTP::getSeconds() {
     return timeinfo->tm_sec;
-    return actualTime % 60;
 }
 
 int NTP::getMinutes() {
     return timeinfo->tm_min;
-    return actualTime / 60 % 60;
 }
 
 int NTP::getHours() {
-    //int h = (actualTime / 3600 % 24)+timezone;
-    int h = timeinfo->tm_hour + timezone;
-    if(h >= 24) h -= 24;
-    return h;
+    return timeinfo->tm_hour;    
 }
 
 int NTP::getDay() {
     return timeinfo->tm_mday;
+}
+
+int NTP::getDow(){
+    return timeinfo->tm_wday + 1;
 }
 
 int NTP::getMonth() {
@@ -176,4 +174,30 @@ int NTP::getMonth() {
 
 int NTP::getYear() {
     return timeinfo->tm_year + 1900;
+}
+
+int NTP::getWeek(){
+    return floor(timeinfo->tm_yday / 7);
+}
+
+//Returns timezone difference to UTC in minutes
+int NTP::getTimeZone(){
+    return timezone;
+}
+
+//Returns DST offset in minutes
+int NTP::getDST(){
+    //Checking the month
+    if(getMonth() >= dstInfo[1].month && getMonth() <= dstInfo[0].month)
+        //Checking week
+        if(true)
+            //Checking DOW
+            if(getDow() >= dstInfo[1].dow && getDow() <= dstInfo[0].dow)
+                //checking hour
+                if(((UTCtime + (timezone + dstOffset[0]) * 60) / 3600 % 24) >= dstInfo[1].hour && ((UTCtime + (timezone + dstOffset[1]) * 60) / 3600 % 24) <= dstInfo[0].hour)
+                    return dstOffset[1];
+    else
+        return dstOffset[0];    
+    
+    return 0;
 }

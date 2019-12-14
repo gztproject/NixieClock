@@ -29,10 +29,10 @@
         unsigned long prevNTP = 0;
         unsigned long lastNTPResponse = millis();
         time_t timeUNIX = 0;
-        time_t actualTime = 0;
+        time_t UTCtime = 0;
         struct tm * timeinfo;
 
-        unsigned long prevActualTime = 0;
+        time_t prevUTCtime = 0;
         
         void startUDP();
         void sendNTPpacket(IPAddress& address);
@@ -54,8 +54,12 @@
             int getMinutes();
             int getHours();
             int getDay();
+            int getDow();
             int getMonth();
             int getYear();
+            int getWeek();
+            int getTimeZone();
+            int getDST();
     };   
 
 #endif
