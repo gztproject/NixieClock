@@ -15,7 +15,7 @@
 /*****                 Clock options                   ******/
 /************************************************************/
 
-#define TIMEZONE 1
+#define TIMEZONE 1*60
 #define TIME_HOST "pool.ntp.org"
 #define INTERVAL_NTP 20*60*1000
 #define USE_DST true

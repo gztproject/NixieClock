@@ -15,15 +15,15 @@ void setup() {
     OTA(HOST_NAME, OTA_KEY);
     myWiFi(WIFI_SSID, WIFI_PASSWORD);    
     ntp.init(TIME_HOST, INTERVAL_NTP, TIMEZONE, 
-        TIME_STD_HEMISPHERE, TIME_STD_WEEK, TIME_STD_DAY, TIME_STD_MONTH, TIME_STD_HOUR, TIME_STD_OFFSET,
-        TIME_DST_HEMISPHERE, TIME_DST_WEEK, TIME_DST_DAY, TIME_DST_MONTH, TIME_DST_HOUR, TIME_DST_OFFSET);
+        TIME_STD_WEEK, TIME_STD_DAY, TIME_STD_MONTH, TIME_STD_HOUR, TIME_STD_OFFSET,
+        TIME_DST_WEEK, TIME_DST_DAY, TIME_DST_MONTH, TIME_DST_HOUR, TIME_DST_OFFSET);
     Serial.println("****************** Ended setup: ***********************");
     Serial.println();
 }
 
 void loop() {
-    Serial.println("****************** Entered main loop: ***********************");
-    Serial.println();
+    //Serial.println("****************** Entered main loop: ***********************");
+    //Serial.println();
     
     ntp.CheckTime();
     
@@ -49,5 +49,4 @@ void loop() {
         else 
     #endif
             nixie.showTime(ntp.getHours(), ntp.getMinutes(), ntp.getSeconds());
-
 }
