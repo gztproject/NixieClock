@@ -26,7 +26,7 @@
   #define DATE_DISPLAY_TIME 10
 #endif
 
-#define SHOW_TEMP false 
+#define SHOW_TEMP false //Not yet implemented really...
 #if SHOW_TEMP
   #define TEMP_START_SECOND 50
   #define TEMP_DISPLAY_TIME 10
