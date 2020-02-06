@@ -6,7 +6,7 @@
 #include <NixieClock.h>
  
 NTP ntp;
-NixieClock nixie(NUM_CHIPS, DATA_PIN, CLOCK_PIN, LATCH_PIN);
+NixieClock nixie(DATA_PIN, CLOCK_PIN, LATCH_PIN);
 
 void setup() { 
     Serial.println("****************** Entered setup: ***********************");

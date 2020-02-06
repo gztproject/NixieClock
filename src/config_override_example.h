@@ -1,4 +1,7 @@
-#define SERIAL_DEBUG true
+#ifndef CONFIG_OVERRIDE_H
+#define CONFIG_OVERRIDE_H
+
+#define SERIAL_DEBUG false
 #define OTA_KEY "21232f297a57a5a743894a0e4a801fc3" // ->'admin'
 
 
@@ -36,4 +39,5 @@
 #if CYCLE_LAMPS
   #define CYCLE_START_SECOND 0
   #define CYCLE_TIME 1
+#endif
 #endif

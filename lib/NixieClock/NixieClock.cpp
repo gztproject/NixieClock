@@ -2,7 +2,7 @@
 #include <NixieClock.h>
 #include <ShiftRegister74HC595.h>
 
-NixieClock::NixieClock(int numChips, int dataPin, int clockPin, int latchPin) : sr (numChips, dataPin, clockPin, latchPin)
+NixieClock::NixieClock(int dataPin, int clockPin, int latchPin) : sr(dataPin, clockPin, latchPin)
 {   
 }
 
