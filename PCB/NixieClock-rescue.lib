@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# NixieClock-rescue_+12V-power1
+# +12V-power1
 #
-DEF NixieClock-rescue_+12V-power1 #PWR 0 0 Y Y 1 F P
+DEF +12V-power1 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "NixieClock-rescue_+12V-power1" 0 140 50 H V C CNN
+F1 "+12V-power1" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -16,11 +16,11 @@ X +12V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_+3.3V-power1
+# +3.3V-power1
 #
-DEF NixieClock-rescue_+3.3V-power1 #PWR 0 0 Y Y 1 F P
+DEF +3.3V-power1 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "NixieClock-rescue_+3.3V-power1" 0 140 50 H V C CNN
+F1 "+3.3V-power1" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -31,11 +31,11 @@ X +3V3 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_+5V-power1
+# +5V-power1
 #
-DEF NixieClock-rescue_+5V-power1 #PWR 0 0 Y Y 1 F P
+DEF +5V-power1 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "NixieClock-rescue_+5V-power1" 0 140 50 H V C CNN
+F1 "+5V-power1" 0 140 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -46,11 +46,11 @@ X +5V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_74141-74xx_IEEE1
+# 74141-74xx_IEEE1
 #
-DEF NixieClock-rescue_74141-74xx_IEEE1 U 0 30 Y Y 1 F N
+DEF 74141-74xx_IEEE1 U 0 30 Y Y 1 F N
 F0 "U" 0 0 50 H V C CNN
-F1 "NixieClock-rescue_74141-74xx_IEEE1" 300 -600 50 H V C CNN
+F1 "74141-74xx_IEEE1" 300 -600 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -78,11 +78,11 @@ X ~Q3 9 600 150 300 L 50 50 1 1 C I
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_74HC595-74xx1
+# 74HC595-74xx1
 #
-DEF NixieClock-rescue_74HC595-74xx1 U 0 20 Y Y 1 F N
+DEF 74HC595-74xx1 U 0 20 Y Y 1 F N
 F0 "U" -300 550 50 H V C CNN
-F1 "NixieClock-rescue_74HC595-74xx1" -300 -650 50 H V C CNN
+F1 "74HC595-74xx1" -300 -650 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -113,11 +113,11 @@ X QH' 9 400 -500 100 L 50 50 1 0 O
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_BME280-Sensor1
+# BME280-Sensor1
 #
-DEF NixieClock-rescue_BME280-Sensor1 U 0 20 Y Y 1 F N
+DEF BME280-Sensor1 U 0 20 Y Y 1 F N
 F0 "U" -350 450 50 H V C CNN
-F1 "NixieClock-rescue_BME280-Sensor1" 300 450 50 H V C CNN
+F1 "BME280-Sensor1" 300 450 50 H V C CNN
 F2 "Package_LGA:Bosch_LGA-8_2.5x2.5mm_P0.65mm_ClockwisePinNumbering" 1500 -450 50 H I C CNN
 F3 "" 0 -200 50 H I C CNN
 $FPLIST
@@ -136,11 +136,11 @@ X VDD 8 100 600 200 D 50 50 1 1 W
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_Barrel_Jack-Connector1
+# Barrel_Jack-Connector1
 #
-DEF NixieClock-rescue_Barrel_Jack-Connector1 J 0 40 Y Y 1 F N
+DEF Barrel_Jack-Connector1 J 0 40 Y Y 1 F N
 F0 "J" 0 210 50 H V C CNN
-F1 "NixieClock-rescue_Barrel_Jack-Connector1" 0 -200 50 H V C CNN
+F1 "Barrel_Jack-Connector1" 0 -200 50 H V C CNN
 F2 "" 50 -40 50 H I C CNN
 F3 "" 50 -40 50 H I C CNN
 $FPLIST
@@ -158,11 +158,11 @@ X ~ 2 300 -100 100 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_C-Device1
+# C-Device1
 #
-DEF NixieClock-rescue_C-Device1 C 0 10 N Y 1 F N
+DEF C-Device1 C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "NixieClock-rescue_C-Device1" 25 -100 50 H V L CNN
+F1 "C-Device1" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -176,11 +176,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_Conn_01x03_Male-Connector1
+# Conn_01x03_Male-Connector1
 #
-DEF NixieClock-rescue_Conn_01x03_Male-Connector1 J 0 40 Y N 1 F N
+DEF Conn_01x03_Male-Connector1 J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "NixieClock-rescue_Conn_01x03_Male-Connector1" 0 -200 50 H V C CNN
+F1 "Conn_01x03_Male-Connector1" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -199,11 +199,11 @@ X Pin_3 3 200 -100 150 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_GND-power1
+# GND-power1
 #
-DEF NixieClock-rescue_GND-power1 #PWR 0 0 Y Y 1 F P
+DEF GND-power1 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -250 50 H I C CNN
-F1 "NixieClock-rescue_GND-power1" 0 -150 50 H V C CNN
+F1 "GND-power1" 0 -150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -212,11 +212,11 @@ X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_IN-12A-nixies
+# IN-12A-nixies
 #
-DEF NixieClock-rescue_IN-12A-nixies N 0 40 Y Y 1 L N
+DEF IN-12A-nixies N 0 40 Y Y 1 L N
 F0 "N" -225 825 50 H V L BNN
-F1 "NixieClock-rescue_IN-12A-nixies" 0 0 50 H V L BNN
+F1 "IN-12A-nixies" 0 0 50 H V L BNN
 F2 "russian-nixies-IN-12" 0 150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -238,11 +238,11 @@ X A A 400 0 200 L 40 40 1 1 B
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_L7805-Regulator_Linear1
+# L7805-Regulator_Linear1
 #
-DEF NixieClock-rescue_L7805-Regulator_Linear1 U 0 10 Y Y 1 F N
+DEF L7805-Regulator_Linear1 U 0 10 Y Y 1 F N
 F0 "U" -150 125 50 H V C CNN
-F1 "NixieClock-rescue_L7805-Regulator_Linear1" 0 125 50 H V L CNN
+F1 "L7805-Regulator_Linear1" 0 125 50 H V L CNN
 F2 "" 25 -150 50 H I L CIN
 F3 "" 0 -50 50 H I C CNN
 $FPLIST
@@ -258,11 +258,11 @@ X OUT 3 300 0 100 L 50 50 1 1 w
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_Lamp_Neon-Device1
+# Lamp_Neon-Device1
 #
-DEF NixieClock-rescue_Lamp_Neon-Device1 NE 0 1 Y N 1 F N
+DEF Lamp_Neon-Device1 NE 0 1 Y N 1 F N
 F0 "NE" 25 150 50 H V L CNN
-F1 "NixieClock-rescue_Lamp_Neon-Device1" 25 -150 50 H V L CNN
+F1 "Lamp_Neon-Device1" 25 -150 50 H V L CNN
 F2 "" 0 100 50 V I C CNN
 F3 "" 0 100 50 V I C CNN
 DRAW
@@ -277,11 +277,11 @@ X ~ 2 0 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_MPSA42-Transistor_BJT1
+# MPSA42-Transistor_BJT1
 #
-DEF NixieClock-rescue_MPSA42-Transistor_BJT1 Q 0 40 Y N 1 F N
+DEF MPSA42-Transistor_BJT1 Q 0 40 Y N 1 F N
 F0 "Q" 200 75 50 H V L CNN
-F1 "NixieClock-rescue_MPSA42-Transistor_BJT1" 200 0 50 H V L CNN
+F1 "MPSA42-Transistor_BJT1" 200 0 50 H V L CNN
 F2 "Package_TO_SOT_THT:TO-92_Inline" 200 -75 50 H I L CIN
 F3 "" 0 0 50 H I L CNN
 $FPLIST
@@ -300,11 +300,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_PWR_FLAG-power1
+# PWR_FLAG-power1
 #
-DEF NixieClock-rescue_PWR_FLAG-power1 #FLG 0 0 N N 1 F P
+DEF PWR_FLAG-power1 #FLG 0 0 N N 1 F P
 F0 "#FLG" 0 75 50 H I C CNN
-F1 "NixieClock-rescue_PWR_FLAG-power1" 0 150 50 H V C CNN
+F1 "PWR_FLAG-power1" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -313,11 +313,11 @@ X pwr 1 0 0 0 U 50 50 0 0 w
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_R-Device1
+# R-Device1
 #
-DEF NixieClock-rescue_R-Device1 R 0 0 N Y 1 F N
+DEF R-Device1 R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "NixieClock-rescue_R-Device1" 0 0 50 V V C CNN
+F1 "R-Device1" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -330,11 +330,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_VCC-power1
+# VCC-power1
 #
-DEF NixieClock-rescue_VCC-power1 #PWR 0 0 Y Y 1 F P
+DEF VCC-power1 #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "NixieClock-rescue_VCC-power1" 0 150 50 H V C CNN
+F1 "VCC-power1" 0 150 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -344,11 +344,11 @@ X VCC 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# NixieClock-rescue_WeMos_D1_mini-MCU_Module1
+# WeMos_D1_mini-MCU_Module1
 #
-DEF NixieClock-rescue_WeMos_D1_mini-MCU_Module1 U 0 20 Y Y 1 F N
+DEF WeMos_D1_mini-MCU_Module1 U 0 20 Y Y 1 F N
 F0 "U" 150 750 50 H V L CNN
-F1 "NixieClock-rescue_WeMos_D1_mini-MCU_Module1" 50 -750 50 H V L CNN
+F1 "WeMos_D1_mini-MCU_Module1" 50 -750 50 H V L CNN
 F2 "Module:WEMOS_D1_mini_light" 0 -1150 50 H I C CNN
 F3 "" -1850 -1150 50 H I C CNN
 $FPLIST
