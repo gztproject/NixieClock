@@ -68,7 +68,7 @@
     (aux_axis_origin 0 0)
     (visible_elements FFFFFFFF)
     (pcbplotparams
-      (layerselection 0x010f0_80000001)
+      (layerselection 0x010f0_ffffffff)
       (usegerberextensions true)
       (usegerberattributes false)
       (usegerberadvancedattributes false)
@@ -1454,7 +1454,7 @@
     (pad 16 thru_hole oval (at 22.86 0 90) (size 1.6 1.6) (drill 0.8) (layers *.Cu *.Mask)
       (net 33 "Net-(U2-Pad16)"))
     (model /media/gapi/Data/dev/KiCad/Libraries/3D/WEMOS_D1_MINI_V3.0.0.step
-      (offset (xyz 11.5 -9 3.5))
+      (offset (xyz 11.5 -9 7))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 180 0))
     )

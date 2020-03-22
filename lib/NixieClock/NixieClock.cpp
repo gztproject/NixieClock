@@ -11,8 +11,12 @@ NixieClock::NixieClock(int dataPin, int clockPin, int latchPin) : sr(dataPin, cl
  */
 void NixieClock::showTime(int h, int m, int s)
 {     
-    uint8_t pinValues[] = { itob(h, true), itob(m, true), itob(s, true), COLONS };
-    sr.setAll(pinValues);
+    pinValues[0] = itob(h, true);
+    pinValues[1] = itob(m, true);
+    pinValues[2] = itob(s, true);
+    pinValues[3] = COLONS;
+    //sr.setAll(pinValues);
+    updateClock();
     //debug(pinValues);
 }
 
@@ -23,8 +27,12 @@ void NixieClock::showDate(int d, int m, int y)
 {     
     while (y>99)
         y-=100;
-    uint8_t pinValues[] = { itob(d, false), itob(m, false), itob(y, true), DOTS };
-    sr.setAll(pinValues);
+    pinValues[0] = itob(d, false);
+    pinValues[1] = itob(m, false);
+    pinValues[2] = itob(y, true);
+    pinValues[3] = DOTS;
+    //sr.setAll(pinValues);
+    updateClock();
     //debug(pinValues);
 }
 
@@ -33,9 +41,12 @@ void NixieClock::showDate(int d, int m, int y)
  */
 void NixieClock::showTempHum(int temp, int hum)
 {   
-    byte middleDigits = hum > 99 ? itob(1, false) : EMPTY_PAIR;
-    uint8_t pinValues[] = { itob(abs(temp), false), middleDigits, itob(hum > 99 ? hum-100 : hum, hum > 99), LEFT_UP_DOT };
-    sr.setAll(pinValues);
+    pinValues[0] = itob(abs(temp), false);
+    pinValues[1] = hum > 99 ? itob(1, false) : EMPTY_PAIR;
+    pinValues[2] = itob(hum > 99 ? hum-100 : hum, hum > 99);
+    pinValues[3] = LEFT_UP_DOT;
+    //sr.setAll(pinValues);
+    updateClock();
     //debug(pinValues);
 }
 
@@ -44,19 +55,29 @@ void NixieClock::showTempHum(int temp, int hum)
  */
 void NixieClock::showInt(uint32_t i, bool leadingZeros)
 {     
-    byte leftDigits = i > 9999 ? itob(floor(i/10000), leadingZeros) : leadingZeros ? itob(0, leadingZeros) : EMPTY_PAIR;
-    byte middleDigits = i > 99 ? itob(floor((i % 10000)/100), leadingZeros) : leadingZeros ? itob(0, leadingZeros) : EMPTY_PAIR;
-    byte rightDigits = itob(i%100, leadingZeros);
-    uint8_t pinValues[] = { leftDigits, middleDigits, rightDigits, NO_DOTS };
-    sr.setAll(pinValues);
+    pinValues[0] = i > 9999 ? itob(floor(i/10000), leadingZeros) : leadingZeros ? itob(0, leadingZeros) : EMPTY_PAIR;
+    pinValues[1] = i > 99 ? itob(floor((i % 10000)/100), leadingZeros) : leadingZeros ? itob(0, leadingZeros) : EMPTY_PAIR;
+    pinValues[2] = itob(i%100, leadingZeros);
+    pinValues[3] = NO_DOTS;
+    
+    //sr.setAll(pinValues);
+    updateClock();
     //debug(pinValues);
 }
 
 void NixieClock::cycleTubes()
+{    
+    showInt(rand()%1000000, true);
+    delay(20);    
+}
+
+void NixieClock::updateClock()
 {
-    for(uint32_t i = 0; i<10000000; i += 111111)
+    if (pinValues != lastValues)
     {
-        showInt(i, true);
+        Serial.println("Got new values, updating the clock.");
+        sr.setAll(pinValues.cbegin());
+        std::copy(std::begin(pinValues), std::end(pinValues), std::begin(lastValues));        
     }
 }
 
