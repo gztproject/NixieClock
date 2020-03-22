@@ -38,6 +38,9 @@ private:
     byte itob(int i, bool prependZero);
     const char *btoa(byte b);
     void debug(uint8_t pinValues[]);
+    void updateClock();
+    std::array<uint8_t, 4> pinValues;
+    std::array<uint8_t, 4> lastValues;
 };
 
 #endif

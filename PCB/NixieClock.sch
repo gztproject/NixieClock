@@ -14,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L nixies:IN-12A N1
+L NixieClock-rescue:IN-12A-nixies N1
 U 1 1 5D644170
 P 9350 4450
 F 0 "N1" H 9125 5275 50  0000 L BNN
@@ -25,7 +25,7 @@ F 3 "" H 9350 4450 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nixies:IN-12A N2
+L NixieClock-rescue:IN-12A-nixies N2
 U 1 1 5D64431F
 P 9350 6000
 F 0 "N2" H 9125 6825 50  0000 L BNN
@@ -36,7 +36,7 @@ F 3 "" H 9350 6000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nixies:IN-12A N3
+L NixieClock-rescue:IN-12A-nixies N3
 U 1 1 5D644397
 P 9350 8000
 F 0 "N3" H 9000 8750 50  0000 L BNN
@@ -47,7 +47,7 @@ F 3 "" H 9350 8000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nixies:IN-12A N4
+L NixieClock-rescue:IN-12A-nixies N4
 U 1 1 5D6443EC
 P 9350 9550
 F 0 "N4" H 9125 10375 50  0000 L BNN
@@ -58,7 +58,7 @@ F 3 "" H 9350 9550 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nixies:IN-12A N5
+L NixieClock-rescue:IN-12A-nixies N5
 U 1 1 5D644484
 P 9350 11500
 F 0 "N5" H 8950 12250 50  0000 L BNN
@@ -69,7 +69,7 @@ F 3 "" H 9350 11500 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L nixies:IN-12A N6
+L NixieClock-rescue:IN-12A-nixies N6
 U 1 1 5D6444E9
 P 9350 13050
 F 0 "N6" H 9000 13800 50  0000 L BNN
@@ -80,7 +80,7 @@ F 3 "" H 9350 13050 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device1:Lamp_Neon NE1
+L NixieClock-rescue:Lamp_Neon-Device1 NE1
 U 1 1 5D645472
 P 9300 6800
 F 0 "NE1" V 9200 6500 50  0000 L CNN
@@ -91,7 +91,7 @@ F 3 "" V 9300 6900 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:Lamp_Neon NE2
+L NixieClock-rescue:Lamp_Neon-Device1 NE2
 U 1 1 5D6459B9
 P 9300 7100
 F 0 "NE2" V 9200 6800 50  0000 L CNN
@@ -102,7 +102,7 @@ F 3 "" V 9300 7200 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:Lamp_Neon NE3
+L NixieClock-rescue:Lamp_Neon-Device1 NE3
 U 1 1 5D646523
 P 9300 10350
 F 0 "NE3" V 9200 10050 50  0000 L CNN
@@ -113,7 +113,7 @@ F 3 "" V 9300 10450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:Lamp_Neon NE4
+L NixieClock-rescue:Lamp_Neon-Device1 NE4
 U 1 1 5D64662F
 P 9300 10600
 F 0 "NE4" V 9200 10300 50  0000 L CNN
@@ -124,7 +124,7 @@ F 3 "" V 9300 10700 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L 74xx_IEEE1:74141 U9
+L NixieClock-rescue:74141-74xx_IEEE1 U9
 U 1 1 5D647224
 P 7900 4300
 F 0 "U9" H 7900 4300 50  0000 C CNN
@@ -135,7 +135,7 @@ F 3 "" H 7900 4300 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx_IEEE1:74141 U10
+L NixieClock-rescue:74141-74xx_IEEE1 U10
 U 1 1 5D647468
 P 7900 5850
 F 0 "U10" H 7900 5850 50  0000 C CNN
@@ -146,7 +146,7 @@ F 3 "" H 7900 5850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx_IEEE1:74141 U11
+L NixieClock-rescue:74141-74xx_IEEE1 U11
 U 1 1 5D6474EE
 P 7900 7850
 F 0 "U11" H 7900 7850 50  0000 C CNN
@@ -157,7 +157,7 @@ F 3 "" H 7900 7850 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx_IEEE1:74141 U12
+L NixieClock-rescue:74141-74xx_IEEE1 U12
 U 1 1 5D6477BA
 P 7900 9400
 F 0 "U12" H 7900 9400 50  0000 C CNN
@@ -168,7 +168,7 @@ F 3 "" H 7900 9400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx_IEEE1:74141 U13
+L NixieClock-rescue:74141-74xx_IEEE1 U13
 U 1 1 5D647A50
 P 7900 11350
 F 0 "U13" H 7900 11350 50  0000 C CNN
@@ -179,7 +179,7 @@ F 3 "" H 7900 11350 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx_IEEE1:74141 U14
+L NixieClock-rescue:74141-74xx_IEEE1 U14
 U 1 1 5D647AC5
 P 7900 12900
 F 0 "U14" H 7900 12900 50  0000 C CNN
@@ -190,7 +190,7 @@ F 3 "" H 7900 12900 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx1:74HC595 U5
+L NixieClock-rescue:74HC595-74xx1 U5
 U 1 1 5D648D79
 P 6200 5050
 F 0 "U5" H 5900 5600 50  0000 C CNN
@@ -201,7 +201,7 @@ F 3 "" H 6200 5050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx1:74HC595 U6
+L NixieClock-rescue:74HC595-74xx1 U6
 U 1 1 5D64948D
 P 6200 8600
 F 0 "U6" H 5900 9150 50  0000 C CNN
@@ -212,7 +212,7 @@ F 3 "" H 6200 8600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx1:74HC595 U7
+L NixieClock-rescue:74HC595-74xx1 U7
 U 1 1 5D649583
 P 6200 12100
 F 0 "U7" H 5900 12650 50  0000 C CNN
@@ -223,7 +223,7 @@ F 3 "" H 6200 12100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device1:R R3
+L NixieClock-rescue:R-Device1 R3
 U 1 1 5D64B297
 P 10050 4450
 F 0 "R3" V 10130 4450 50  0000 C CNN
@@ -234,7 +234,7 @@ F 3 "" H 10050 4450 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R4
+L NixieClock-rescue:R-Device1 R4
 U 1 1 5D64B56C
 P 10050 6000
 F 0 "R4" V 10130 6000 50  0000 C CNN
@@ -245,7 +245,7 @@ F 3 "" H 10050 6000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R7
+L NixieClock-rescue:R-Device1 R7
 U 1 1 5D64B628
 P 10050 8000
 F 0 "R7" V 10130 8000 50  0000 C CNN
@@ -256,7 +256,7 @@ F 3 "" H 10050 8000 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R8
+L NixieClock-rescue:R-Device1 R8
 U 1 1 5D64B6F0
 P 10050 9550
 F 0 "R8" V 10130 9550 50  0000 C CNN
@@ -267,7 +267,7 @@ F 3 "" H 10050 9550 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R11
+L NixieClock-rescue:R-Device1 R11
 U 1 1 5D64C15A
 P 10050 11500
 F 0 "R11" V 10130 11500 50  0000 C CNN
@@ -278,7 +278,7 @@ F 3 "" H 10050 11500 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R12
+L NixieClock-rescue:R-Device1 R12
 U 1 1 5D64C234
 P 10050 13050
 F 0 "R12" V 10130 13050 50  0000 C CNN
@@ -289,7 +289,7 @@ F 3 "" H 10050 13050 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R9
+L NixieClock-rescue:R-Device1 R9
 U 1 1 5D64C303
 P 10050 10350
 F 0 "R9" V 10130 10350 50  0000 C CNN
@@ -300,7 +300,7 @@ F 3 "" H 10050 10350 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R10
+L NixieClock-rescue:R-Device1 R10
 U 1 1 5D64C3F6
 P 10050 10600
 F 0 "R10" V 10130 10600 50  0000 C CNN
@@ -311,7 +311,7 @@ F 3 "" H 10050 10600 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R5
+L NixieClock-rescue:R-Device1 R5
 U 1 1 5D64C49F
 P 10050 6800
 F 0 "R5" V 10130 6800 50  0000 C CNN
@@ -322,7 +322,7 @@ F 3 "" H 10050 6800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device1:R R6
+L NixieClock-rescue:R-Device1 R6
 U 1 1 5D64C8AD
 P 10050 7100
 F 0 "R6" V 10130 7100 50  0000 C CNN
@@ -333,7 +333,7 @@ F 3 "" H 10050 7100 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L MCU_Module1:WeMos_D1_mini U2
+L NixieClock-rescue:WeMos_D1_mini-MCU_Module1 U2
 U 1 1 5D656ABC
 P 2600 5100
 F 0 "U2" H 2750 5850 50  0000 L CNN
@@ -344,7 +344,7 @@ F 3 "" H 750 3950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Regulator_Linear1:L7805 U1
+L NixieClock-rescue:L7805-Regulator_Linear1 U1
 U 1 1 5D656F44
 P 2400 1250
 F 0 "U1" H 2250 1375 50  0000 C CNN
@@ -355,7 +355,7 @@ F 3 "" H 2400 1200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector1:Barrel_Jack J1
+L NixieClock-rescue:Barrel_Jack-Connector1 J1
 U 1 1 5D657187
 P 1100 1350
 F 0 "J1" H 1100 1560 50  0000 C CNN
@@ -366,7 +366,7 @@ F 3 "" H 1150 1310 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR2
+L NixieClock-rescue:GND-power1 #PWR2
 U 1 1 5D6575F4
 P 1500 1800
 F 0 "#PWR2" H 1500 1550 50  0001 C CNN
@@ -377,7 +377,7 @@ F 3 "" H 1500 1800 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+12V #PWR1
+L NixieClock-rescue:+12V-power1 #PWR1
 U 1 1 5D65771F
 P 1500 1150
 F 0 "#PWR1" H 1500 1000 50  0001 C CNN
@@ -388,7 +388,7 @@ F 3 "" H 1500 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device1:C C1
+L NixieClock-rescue:C-Device1 C1
 U 1 1 5D657E20
 P 1900 1500
 F 0 "C1" H 1925 1600 50  0000 L CNN
@@ -399,7 +399,7 @@ F 3 "" H 1900 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device1:C C2
+L NixieClock-rescue:C-Device1 C2
 U 1 1 5D658746
 P 2800 1500
 F 0 "C2" H 2825 1600 50  0000 L CNN
@@ -410,7 +410,7 @@ F 3 "" H 2800 1500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR6
+L NixieClock-rescue:+5V-power1 #PWR6
 U 1 1 5D658A91
 P 2800 1150
 F 0 "#PWR6" H 2800 1000 50  0001 C CNN
@@ -421,7 +421,7 @@ F 3 "" H 2800 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+5V #PWR3
+L NixieClock-rescue:+5V-power1 #PWR3
 U 1 1 5D658FEB
 P 2500 4200
 F 0 "#PWR3" H 2500 4050 50  0001 C CNN
@@ -435,7 +435,7 @@ NoConn ~ 2200 4700
 NoConn ~ 2200 5000
 NoConn ~ 2200 5100
 $Comp
-L power1:GND #PWR4
+L NixieClock-rescue:GND-power1 #PWR4
 U 1 1 5D65932C
 P 2600 6150
 F 0 "#PWR4" H 2600 5900 50  0001 C CNN
@@ -447,7 +447,7 @@ F 3 "" H 2600 6150 50  0001 C CNN
 $EndComp
 NoConn ~ 3000 4600
 $Comp
-L Sensor1:BME280 U3
+L NixieClock-rescue:BME280-Sensor1 U3
 U 1 1 5D65BAAA
 P 3550 3250
 F 0 "U3" H 3200 3700 50  0000 C CNN
@@ -458,7 +458,7 @@ F 3 "" H 3550 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR9
+L NixieClock-rescue:GND-power1 #PWR9
 U 1 1 5D65BEAB
 P 3450 4000
 F 0 "#PWR9" H 3450 3750 50  0001 C CNN
@@ -469,7 +469,7 @@ F 3 "" H 3450 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+3.3V #PWR5
+L NixieClock-rescue:+3.3V-power1 #PWR5
 U 1 1 5D65D634
 P 2700 4200
 F 0 "#PWR5" H 2700 4050 50  0001 C CNN
@@ -480,7 +480,7 @@ F 3 "" H 2700 4200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+3.3V #PWR8
+L NixieClock-rescue:+3.3V-power1 #PWR8
 U 1 1 5D65D9F8
 P 3450 2550
 F 0 "#PWR8" H 3450 2400 50  0001 C CNN
@@ -493,7 +493,7 @@ $EndComp
 NoConn ~ 3650 2650
 NoConn ~ 3650 3850
 $Comp
-L power1:VCC #PWR7
+L NixieClock-rescue:VCC-power1 #PWR7
 U 1 1 5D66003C
 P 3000 1150
 F 0 "#PWR7" H 3000 1000 50  0001 C CNN
@@ -504,7 +504,7 @@ F 3 "" H 3000 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR13
+L NixieClock-rescue:GND-power1 #PWR13
 U 1 1 5D660F95
 P 6200 5850
 F 0 "#PWR13" H 6200 5600 50  0001 C CNN
@@ -515,7 +515,7 @@ F 3 "" H 6200 5850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR15
+L NixieClock-rescue:GND-power1 #PWR15
 U 1 1 5D6611E7
 P 6200 9400
 F 0 "#PWR15" H 6200 9150 50  0001 C CNN
@@ -526,7 +526,7 @@ F 3 "" H 6200 9400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR17
+L NixieClock-rescue:GND-power1 #PWR17
 U 1 1 5D661E29
 P 6200 12900
 F 0 "#PWR17" H 6200 12650 50  0001 C CNN
@@ -537,7 +537,7 @@ F 3 "" H 6200 12900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:VCC #PWR12
+L NixieClock-rescue:VCC-power1 #PWR12
 U 1 1 5D66317D
 P 6200 4350
 F 0 "#PWR12" H 6200 4200 50  0001 C CNN
@@ -548,7 +548,7 @@ F 3 "" H 6200 4350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:VCC #PWR14
+L NixieClock-rescue:VCC-power1 #PWR14
 U 1 1 5D66346E
 P 6200 7900
 F 0 "#PWR14" H 6200 7750 50  0001 C CNN
@@ -559,7 +559,7 @@ F 3 "" H 6200 7900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:VCC #PWR16
+L NixieClock-rescue:VCC-power1 #PWR16
 U 1 1 5D6635B7
 P 6200 11400
 F 0 "#PWR16" H 6200 11250 50  0001 C CNN
@@ -570,7 +570,7 @@ F 3 "" H 6200 11400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L 74xx1:74HC595 U4
+L NixieClock-rescue:74HC595-74xx1 U4
 U 1 1 5D6654F3
 P 3550 8600
 F 0 "U4" H 3250 9150 50  0000 C CNN
@@ -581,7 +581,7 @@ F 3 "" H 3550 8600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR11
+L NixieClock-rescue:GND-power1 #PWR11
 U 1 1 5D665502
 P 3550 9400
 F 0 "#PWR11" H 3550 9150 50  0001 C CNN
@@ -592,7 +592,7 @@ F 3 "" H 3550 9400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:VCC #PWR10
+L NixieClock-rescue:VCC-power1 #PWR10
 U 1 1 5D665509
 P 3550 7900
 F 0 "#PWR10" H 3550 7750 50  0001 C CNN
@@ -608,7 +608,7 @@ NoConn ~ 3950 8800
 NoConn ~ 3950 8700
 NoConn ~ 3950 8600
 $Comp
-L Transistor_BJT1:MPSA42 Q2
+L NixieClock-rescue:MPSA42-Transistor_BJT1 Q2
 U 1 1 5D6668B3
 P 6300 6700
 F 0 "Q2" H 6500 6775 50  0000 L CNN
@@ -619,7 +619,7 @@ F 3 "" H 6300 6700 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT1:MPSA42 Q4
+L NixieClock-rescue:MPSA42-Transistor_BJT1 Q4
 U 1 1 5D666C2F
 P 6800 7100
 F 0 "Q4" H 7000 7175 50  0000 L CNN
@@ -630,7 +630,7 @@ F 3 "" H 6800 7100 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR19
+L NixieClock-rescue:GND-power1 #PWR19
 U 1 1 5D667208
 P 6650 7450
 F 0 "#PWR19" H 6650 7200 50  0001 C CNN
@@ -641,7 +641,7 @@ F 3 "" H 6650 7450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT1:MPSA42 Q1
+L NixieClock-rescue:MPSA42-Transistor_BJT1 Q1
 U 1 1 5D66829E
 P 6200 10300
 F 0 "Q1" H 6400 10375 50  0000 L CNN
@@ -652,7 +652,7 @@ F 3 "" H 6200 10300 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Transistor_BJT1:MPSA42 Q3
+L NixieClock-rescue:MPSA42-Transistor_BJT1 Q3
 U 1 1 5D6682A4
 P 6700 10700
 F 0 "Q3" H 6900 10775 50  0000 L CNN
@@ -663,7 +663,7 @@ F 3 "" H 6700 10700 50  0001 L CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:GND #PWR18
+L NixieClock-rescue:GND-power1 #PWR18
 U 1 1 5D6682B1
 P 6550 11050
 F 0 "#PWR18" H 6550 10800 50  0001 C CNN
@@ -1306,7 +1306,7 @@ Connection ~ 2600 6150
 Wire Wire Line
 	1400 1250 1500 1250
 $Comp
-L power1:PWR_FLAG #FLG1
+L NixieClock-rescue:PWR_FLAG-power1 #FLG1
 U 1 1 5D66CB9A
 P 1900 1150
 F 0 "#FLG1" H 1900 1225 50  0001 C CNN
@@ -1317,7 +1317,7 @@ F 3 "" H 1900 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:PWR_FLAG #FLG2
+L NixieClock-rescue:PWR_FLAG-power1 #FLG2
 U 1 1 5D66D7D7
 P 1900 1800
 F 0 "#FLG2" H 1900 1875 50  0001 C CNN
@@ -1328,7 +1328,7 @@ F 3 "" H 1900 1800 50  0001 C CNN
 	1    0    0    1   
 $EndComp
 $Comp
-L Connector1:Conn_01x03_Male J3
+L NixieClock-rescue:Conn_01x03_Male-Connector1 J3
 U 1 1 5D6521C9
 P 4150 6050
 F 0 "J3" H 4150 6250 50  0000 C CNN
@@ -1351,7 +1351,7 @@ Wire Wire Line
 Wire Wire Line
 	10350 3400 10350 3650
 $Comp
-L power1:PWR_FLAG #FLG3
+L NixieClock-rescue:PWR_FLAG-power1 #FLG3
 U 1 1 5D65A925
 P 10100 3400
 F 0 "#FLG3" H 10100 3475 50  0001 C CNN
@@ -1362,7 +1362,7 @@ F 3 "" H 10100 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector1:Conn_01x03_Male J4
+L NixieClock-rescue:Conn_01x03_Male-Connector1 J4
 U 1 1 5D65B901
 P 10450 3200
 F 0 "J4" H 10450 3400 50  0000 C CNN
@@ -1378,7 +1378,7 @@ Wire Wire Line
 	10100 3650 10350 3650
 Connection ~ 10350 3650
 $Comp
-L power1:GND #PWR20
+L NixieClock-rescue:GND-power1 #PWR20
 U 1 1 5D65C3C4
 P 10550 3500
 F 0 "#PWR20" H 10550 3250 50  0001 C CNN
@@ -1389,7 +1389,7 @@ F 3 "" H 10550 3500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power1:+12V #PWR21
+L NixieClock-rescue:+12V-power1 #PWR21
 U 1 1 5D65C53F
 P 10750 3400
 F 0 "#PWR21" H 10750 3250 50  0001 C CNN
