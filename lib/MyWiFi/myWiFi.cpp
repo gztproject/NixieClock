@@ -26,3 +26,12 @@ myWiFi::myWiFi(const char *ssid, const char *password)
     Serial.println(WiFi.localIP());
     Serial.println();
 }
+
+void myWiFi::getIp(uint8_t *res)
+{
+    IPAddress ip = WiFi.localIP();
+    res[0] = ip.operator[](0);
+    res[1] = ip.operator[](1);
+    res[2] = ip.operator[](2);
+    res[3] = ip.operator[](3);
+}

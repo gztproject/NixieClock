@@ -40,4 +40,13 @@
   #define CYCLE_START_SECOND 0
   #define CYCLE_TIME 1
 #endif
+
+#define SHOW_IP_ON_STARTUP true
+
+#define SHOW_IP false
+#if SHOW_IP
+  #define ONLY_SHOW_LAST_TWO_OCTETS true
+  #define IP_START_SECOND 1
+  #define IP_DISPLAY_TIME 2
+#endif
 #endif

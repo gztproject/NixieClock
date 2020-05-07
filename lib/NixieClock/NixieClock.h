@@ -32,6 +32,7 @@ public:
     void showTempHum(int temp, int hum);
     void showInt(uint32_t i, bool leadingZeros);
     void cycleTubes();
+    void showIpFlashy(uint8_t *ip, uint8_t numOctets, uint16_t time);
 
 private:
     ShiftRegister74HC595<NUM_CHIPS> sr;
