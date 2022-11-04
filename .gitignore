@@ -6,3 +6,9 @@
 src/config_override.h
 
 PCB/_autosave-NixieClock.kicad_pcb
+
+PCB/Export/
+
+PCB/NixieClock-backups/
+
+PCB/rescue-backup/
