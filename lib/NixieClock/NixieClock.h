@@ -5,8 +5,8 @@
 
 #define NUM_CHIPS 4
 
-#define LEFT_UP_DOT 0x01
-#define LEFT_DN_DOT 0x02
+#define LEFT_UP_DOT 0x02
+#define LEFT_DN_DOT 0x01
 #define RIGHT_UP_DOT 0x04
 #define RIGHT_DN_DOT 0x08
 #define NO_DOTS 0x00

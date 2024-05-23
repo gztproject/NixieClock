@@ -1,7 +1,9 @@
-//myWiFi.h
-#include <Arduino.h>
 #ifndef myWiFi_H
-    #define myWiFi_H    
+#define myWiFi_H    
+
+#include <Arduino.h>
+#include <ESP8266WiFi.h>
+#include "config.h"
 
     class myWiFi
     {

@@ -1,6 +1,6 @@
 //myWiFi.cpp
 #include <myWiFi.h>
-#include <ESP8266WiFi.h>
+
 
 myWiFi::myWiFi(const char *ssid, const char *password)
 {
@@ -19,12 +19,17 @@ myWiFi::myWiFi(const char *ssid, const char *password)
     }
 
     /* Show some important information on Serial Monitor */
+    #ifdef WIFI_DEBUG
+    WiFi.printDiag(Serial);
+    #endif
+
     Serial.println("");
     Serial.print("Connected to ");
     Serial.println(ssid);
     Serial.print("IP address: ");
     Serial.println(WiFi.localIP());
     Serial.println();
+
 }
 
 void myWiFi::getIp(uint8_t *res)
